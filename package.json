@@ -1,0 +1,25 @@
+{
+  "name": "employee-managment-system",
+  "version": "1.0.0",
+  "description": "This is a employee managment system in which administrators can perform CRUD Operations on employee records. Users are able to add new employees, view existing employee details, update employee information, and delete employee records.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yash Yadav",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.5.1"
+  }
+}

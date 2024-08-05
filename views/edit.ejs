@@ -1,0 +1,49 @@
+<%- include('partials/header') %> <br /><br />
+<h2 class="m-3">Employee Name : <%=emp.name%></h2>
+<form
+  class="row g-3 col-md-10 m-3"
+  action="/employee?_method=PUT"
+  method="post"
+>
+  <input type="text" name="id" value="<%=emp.id%>" style="display: none" />
+
+  <div class="col-12">
+    <label for="position" class="form-label">Position : </label>
+    <input
+      class="form-control"
+      type="text"
+      name="emp[position]"
+      id="position"
+      value="<%=emp.position%>"
+      required
+    />
+  </div>
+  <div class="col-12">
+    <label for="department" class="form-label">Department :</label>
+    <input
+      class="form-control"
+      type="text"
+      name="emp[department]"
+      id="department"
+      value="<%=emp.department%>"
+      required
+    />
+  </div>
+  <div class="col-12">
+    <label for="Salary" class="form-label">Salary</label>
+    <input
+      class="form-control"
+      type="number"
+      name="emp[salary]"
+      id="salary"
+      value="<%=emp.salary%>"
+      required
+    />
+  </div>
+
+  <div class="col-12">
+    <button type="submit">Edit</button>
+  </div>
+</form>
+
+<%- include('partials/footer') %>

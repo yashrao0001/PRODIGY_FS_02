@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  height: 105px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+table {
+  width: 90vw !important;
+  border-collapse: collapse;
+  margin-left: 40px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: large;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+form {
+  display: inline-block;
+}
+#btns {
+  width: 250px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+#add-employee {
+  height: 65px;
+  width: 182px;
+  font-size: 1.2rem;
+  margin-left: 35px;
+}
+#outer {
+  display: flex;
+  position: relative;
+  left: 180px;
+  width: 70vw;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+hr {
+  width: 1px;
+  height: 400px;
+  background-color: black;
+  border: none;
+  position: relative;
+  top: 40px;
+}
+.btn {
+  height: 50px !important;
+  width: 100px !important;
+  font-size: 1.2rem !important;
+}
+#home > h1 {
+  position: relative;
+  font-size: 3.5rem !important;
+  top: 18px;
+}
+#home {
+  height: 130px;
+}
+#register {
+  display: block;
+  margin: 80px 200px;
+  font-size: 1.3rem;
+}
+.btnres {
+  height: 60px !important;
+  font-size: 1.5rem !important;
+  width: 120px !important;
+}

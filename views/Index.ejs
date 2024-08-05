@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+<h1 class="m-3">Employees List</h1>
+<table class="table table-bordered border-primary">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Department</th>
+      <th>Salary</th>
+      <!-- <th>Actions</th> -->
+    </tr>
+  </thead>
+  <tbody id="employee-list">
+    <% for (employee of allEmployees) {%>
+    <tr>
+      <td><%= employee.name%></td>
+      <td><%= employee.position%></td>
+      <td><%= employee.department%></td>
+      <td><%= employee.salary%></td>
+      <td id="btns">
+        <form action="/employee/<%=employee.id%>" method="get">
+          <button id="edit-employee">Edit</button>
+        </form>
+        <form action="/employee/<%=employee.id%>?_method=DELETE" method="post">
+          <button id="Del-employee">Delete</button>
+        </form>
+      </td>
+    </tr>
+    <% } %>
+  </tbody>
+</table>
+<form action="/employee/new" method="get">
+  <button id="add-employee">Add Employee</button>
+</form>
+<br /><br /><br /><br /><br />
+
+<%- include('partials/footer') %>
